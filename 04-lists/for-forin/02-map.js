@@ -1,6 +1,6 @@
 const service = require('./service')
 
-Array.prototype.meuMap = (callback) => {
+Array.prototype.meuMap = function (callback) {
     const novoArrayMapeado = []
     for (let indice = 0; indice <= this.length -1; indice++) {
         const resultado = callback(this[indice], indice)
@@ -32,8 +32,10 @@ async function main(){
 
         // ------------------- array meuMap ---------------------------------
         console.time('meuMap')
-        const names = results.results.meuMap((pessoa, indice) => {`[${indice}] ${pessoa.name}`})
-        console.timeEnd('meuMap')          // meuMap: 0.242ms
+        const names = results.results.meuMap(function (pessoa, indice) {
+            return `[${indice}] ${pessoa.name}`
+        })
+        console.timeEnd('meuMap')          // meuMap: 0.285ms
 
         console.log('name', names)
 

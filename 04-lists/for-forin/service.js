@@ -15,13 +15,13 @@ async function obterPessoa(nome){
     return response.data
 }
 
-obterPessoa('r2')
-    .then(function(result){
-        console.log('resultado', result)
-    })
-    .catch(function(error){
-        console.error('deu ruim', error)
-    })
+// obterPessoa('r2')
+//     .then(function(result){
+//         console.log('resultado', result)
+//     })
+//     .catch(function(error){
+//         console.error('deu ruim', error)
+//     })
 
 module.exports = {
     obterPessoa
