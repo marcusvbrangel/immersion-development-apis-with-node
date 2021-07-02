@@ -10,6 +10,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "eslinter": "^3.1.0",
     "mocha": "^9.0.1"
+  },
+  "dependencies": {
+    "commander": "^2.18.0"
   }
 }

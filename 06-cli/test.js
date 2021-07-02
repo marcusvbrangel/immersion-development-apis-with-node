@@ -1,3 +1,8 @@
+
+// Note:
+// observacao automatica das mudancas no arquivo de teste...
+// npm test -w
+
 const { deepStrictEqual, ok } = require('assert')
 
 const database = require('./database')

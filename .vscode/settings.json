@@ -1,0 +1,7 @@
+{
+    "editor.fontSize": 14,
+    "editor.padding.top": 2,
+    "editor.padding.bottom": 2,
+    "editor.renderWhitespace": "boundary",
+    "editor.cursorSurroundingLines": 1
+}
