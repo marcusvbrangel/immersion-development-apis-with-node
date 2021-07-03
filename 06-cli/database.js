@@ -1,7 +1,7 @@
 const { readFile, writeFile } = require("fs")
 
 const { promisify } = require("util")
- 
+
 const readFileAsync = promisify(readFile)
 const writeFileAsync = promisify(writeFile)
 
@@ -9,6 +9,10 @@ const writeFileAsync = promisify(writeFile)
 // const dadosJson = require('./herois.json')
 
 class Database {
+
+	async calcular(){
+		return null
+	}
 
 	constructor(){
 		this.NOME_ARQUIVO = "herois.json"
@@ -63,7 +67,7 @@ class Database {
 	}
 
 	async remover(id){
-        
+
 		if (!id){
 
 			return await this.escreverArquivo([])
