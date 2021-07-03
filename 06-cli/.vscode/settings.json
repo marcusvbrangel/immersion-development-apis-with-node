@@ -1,0 +1,15 @@
+{
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "editor.fontSize": 13,
+    "editor.padding.top": 20,
+    "editor.padding.bottom": 20,
+    "editor.renderWhitespace": "boundary",
+    "editor.cursorSurroundingLines": 1,
+    "editor.columnSelection": false
+}

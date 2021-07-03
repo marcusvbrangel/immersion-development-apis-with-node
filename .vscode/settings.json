@@ -3,5 +3,8 @@
     "editor.padding.top": 2,
     "editor.padding.bottom": 2,
     "editor.renderWhitespace": "boundary",
-    "editor.cursorSurroundingLines": 1
+    "editor.cursorSurroundingLines": 1,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
 }

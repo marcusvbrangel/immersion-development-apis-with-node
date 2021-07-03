@@ -1,0 +1,212 @@
+
+netmarvin@Inspiron:06-cli$ ./node_modules/eslint/bin/eslint.js *.js
+
+/home/netmarvin/Documentos/desenvolvimento/xtreme-code-2021/ewit/imersao-desenvolvimento-apis-node/06-cli/database.js
+    1:41  error  Strings must use doublequote                        quotes
+    3:31  error  Strings must use doublequote                        quotes
+   13:1   error  Expected indentation of 1 tab but found 4 spaces    indent
+   14:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+   15:1   error  Expected indentation of 1 tab but found 4 spaces    indent
+   17:1   error  Expected indentation of 1 tab but found 4 spaces    indent
+   19:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+   19:64  error  Strings must use doublequote                        quotes
+   21:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+   21:46  error  Extra semicolon                                     semi
+   23:1   error  Expected indentation of 1 tab but found 4 spaces    indent
+   25:1   error  Expected indentation of 1 tab but found 4 spaces    indent
+   27:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+   29:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+   29:20  error  Extra semicolon                                     semi
+   31:1   error  Expected indentation of 1 tab but found 4 spaces    indent
+   33:1   error  Expected indentation of 1 tab but found 4 spaces    indent
+   35:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+   37:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+   39:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+   40:1   error  Expected indentation of 3 tabs but found 12 spaces  indent
+   41:1   error  Expected indentation of 3 tabs but found 12 spaces  indent
+   42:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+   44:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+   45:1   error  Expected indentation of 3 tabs but found 12 spaces  indent
+   46:1   error  Expected indentation of 3 tabs but found 12 spaces  indent
+   47:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+   49:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+   51:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+   51:25  error  Extra semicolon                                     semi
+   53:1   error  Expected indentation of 1 tab but found 4 spaces    indent
+   55:1   error  Expected indentation of 1 tab but found 4 spaces    indent
+   57:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+   59:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+   61:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+   61:30  error  Extra semicolon                                     semi
+   63:1   error  Expected indentation of 1 tab but found 4 spaces    indent
+   65:1   error  Expected indentation of 1 tab but found 4 spaces    indent
+   67:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+   69:1   error  Expected indentation of 3 tabs but found 12 spaces  indent
+   71:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+   73:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+   75:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+   77:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+   79:1   error  Expected indentation of 3 tabs but found 12 spaces  indent
+   79:25  error  Strings must use doublequote                        quotes
+   81:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+   83:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+   85:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+   85:49  error  Extra semicolon                                     semi
+   87:1   error  Expected indentation of 1 tab but found 4 spaces    indent
+   89:1   error  Expected indentation of 1 tab but found 4 spaces    indent
+   91:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+   93:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+   95:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+   97:1   error  Expected indentation of 3 tabs but found 12 spaces  indent
+   97:25  error  Strings must use doublequote                        quotes
+   99:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+  101:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+  103:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+  104:1   error  Expected indentation of 3 tabs but found 12 spaces  indent
+  105:1   error  Expected indentation of 3 tabs but found 12 spaces  indent
+  106:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+  108:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+  110:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+  111:1   error  Expected indentation of 3 tabs but found 12 spaces  indent
+  112:1   error  Expected indentation of 3 tabs but found 12 spaces  indent
+  113:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+  115:1   error  Expected indentation of 1 tab but found 4 spaces    indent
+
+/home/netmarvin/Documentos/desenvolvimento/xtreme-code-2021/ewit/imersao-desenvolvimento-apis-node/06-cli/heroi.js
+  3:1  error  Expected indentation of 1 tab but found 4 spaces   indent
+  4:1  error  Expected indentation of 2 tabs but found 8 spaces  indent
+  5:1  error  Expected indentation of 2 tabs but found 8 spaces  indent
+  6:1  error  Expected indentation of 1 tab but found 4 spaces   indent
+
+/home/netmarvin/Documentos/desenvolvimento/xtreme-code-2021/ewit/imersao-desenvolvimento-apis-node/06-cli/index.js
+  9:1  error  Parsing error: Unexpected token const
+
+/home/netmarvin/Documentos/desenvolvimento/xtreme-code-2021/ewit/imersao-desenvolvimento-apis-node/06-cli/test.js
+   6:26  error  'ok' is assigned a value but never used             no-unused-vars
+   6:41  error  Strings must use doublequote                        quotes
+   8:26  error  Strings must use doublequote                        quotes
+  11:1   error  Expected indentation of 1 tab but found 4 spaces    indent
+  11:11  error  Strings must use doublequote                        quotes
+  12:1   error  Expected indentation of 1 tab but found 4 spaces    indent
+  12:12  error  Strings must use doublequote                        quotes
+  13:1   error  Expected indentation of 1 tab but found 4 spaces    indent
+  17:1   error  Expected indentation of 1 tab but found 4 spaces    indent
+  17:11  error  Strings must use doublequote                        quotes
+  18:1   error  Expected indentation of 1 tab but found 4 spaces    indent
+  18:12  error  Strings must use doublequote                        quotes
+  19:1   error  Expected indentation of 1 tab but found 4 spaces    indent
+  22:1   error  'describe' is not defined                           no-undef
+  22:10  error  Strings must use doublequote                        quotes
+  24:1   error  Expected indentation of 1 tab but found 4 spaces    indent
+  24:5   error  'before' is not defined                             no-undef
+  26:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+  28:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+  30:1   error  Expected indentation of 1 tab but found 4 spaces    indent
+  32:1   error  Expected indentation of 1 tab but found 4 spaces    indent
+  32:5   error  'it' is not defined                                 no-undef
+  32:8   error  Strings must use doublequote                        quotes
+  34:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+  36:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+  38:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+  40:1   error  Expected indentation of 1 tab but found 4 spaces    indent
+  42:1   error  Expected indentation of 1 tab but found 4 spaces    indent
+  42:5   error  'it' is not defined                                 no-undef
+  42:8   error  Strings must use doublequote                        quotes
+  44:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+  46:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+  48:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+  50:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+  52:1   error  Expected indentation of 1 tab but found 4 spaces    indent
+  54:1   error  Expected indentation of 1 tab but found 4 spaces    indent
+  54:5   error  'it' is not defined                                 no-undef
+  54:8   error  Strings must use doublequote                        quotes
+  56:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+  58:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+  60:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+  60:45  error  Extra semicolon                                     semi
+  62:1   error  Expected indentation of 1 tab but found 4 spaces    indent
+  64:1   error  Expected indentation of 1 tab but found 4 spaces    indent
+  64:5   error  'it' is not defined                                 no-undef
+  64:8   error  Strings must use doublequote                        quotes
+  66:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+  67:1   error  Expected indentation of 3 tabs but found 12 spaces  indent
+  68:1   error  Expected indentation of 3 tabs but found 12 spaces  indent
+  68:19  error  Strings must use doublequote                        quotes
+  69:1   error  Expected indentation of 3 tabs but found 12 spaces  indent
+  69:20  error  Strings must use doublequote                        quotes
+  70:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+  72:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+  73:1   error  Expected indentation of 3 tabs but found 12 spaces  indent
+  73:19  error  Strings must use doublequote                        quotes
+  74:1   error  Expected indentation of 3 tabs but found 12 spaces  indent
+  74:20  error  Strings must use doublequote                        quotes
+  75:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+  77:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+  79:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+  81:1   error  Expected indentation of 2 tabs but found 8 spaces   indent
+  83:1   error  Expected indentation of 1 tab but found 4 spaces    indent
+
+✖ 137 problems (137 errors, 0 warnings)
+  129 errors and 0 warnings potentially fixable with the `--fix` option.
+
+netmarvin@Inspiron:06-cli$ ./node_modules/eslint/bin/eslint.js --help
+eslint [options] file.js [file.js] [dir]
+
+Basic configuration:
+  --no-eslintrc                   Disable use of configuration from .eslintrc.*
+  -c, --config path::String       Use this configuration, overriding .eslintrc.* config options if present
+  --env [String]                  Specify environments
+  --ext [String]                  Specify JavaScript file extensions
+  --global [String]               Define global variables
+  --parser String                 Specify the parser to be used
+  --parser-options Object         Specify parser options
+  --resolve-plugins-relative-to path::String  A folder where plugins should be resolved from, CWD by default
+
+Specifying rules and plugins:
+  --rulesdir [path::String]       Use additional rules from this directory
+  --plugin [String]               Specify plugins
+  --rule Object                   Specify rules
+
+Fixing problems:
+  --fix                           Automatically fix problems
+  --fix-dry-run                   Automatically fix problems without saving the changes to the file system
+  --fix-type Array                Specify the types of fixes to apply (problem, suggestion, layout)
+
+Ignoring files:
+  --ignore-path path::String      Specify path of ignore file
+  --no-ignore                     Disable use of ignore files and patterns
+  --ignore-pattern [String]       Pattern of files to ignore (in addition to those in .eslintignore)
+
+Using stdin:
+  --stdin                         Lint code provided on <STDIN> - default: false
+  --stdin-filename String         Specify filename to process STDIN as
+
+Handling warnings:
+  --quiet                         Report errors only - default: false
+  --max-warnings Int              Number of warnings to trigger nonzero exit code - default: -1
+
+Output:
+  -o, --output-file path::String  Specify file to write report to
+  -f, --format String             Use a specific output format - default: stylish
+  --color, --no-color             Force enabling/disabling of color
+
+Inline configuration comments:
+  --no-inline-config              Prevent comments from changing config or rules
+  --report-unused-disable-directives  Adds reported errors for unused eslint-disable directives
+
+Caching:
+  --cache                         Only check changed files - default: false
+  --cache-file path::String       Path to the cache file. Deprecated: use --cache-location - default: .eslintcache
+  --cache-location path::String   Path to the cache file or directory
+  --cache-strategy String         Strategy to use for detecting changed files in the cache - either: metadata or content - default: metadata
+
+Miscellaneous:
+  --init                          Run config initialization wizard - default: false
+  --env-info                      Output execution environment information - default: false
+  --no-error-on-unmatched-pattern  Prevent errors when pattern is unmatched
+  --debug                         Output debugging information
+  -h, --help                      Show help
+  -v, --version                   Output the version number
+  --print-config path::String     Print the configuration for the given file
+netmarvin@Inspiron:06-cli$ 
+

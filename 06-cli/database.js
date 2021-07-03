@@ -1,7 +1,7 @@
-const { readFile, writeFile } = require('fs')
+const { readFile, writeFile } = require("fs")
 
-const { promisify } = require('util')
-
+const { promisify } = require("util")
+ 
 const readFileAsync = promisify(readFile)
 const writeFileAsync = promisify(writeFile)
 
@@ -10,109 +10,109 @@ const writeFileAsync = promisify(writeFile)
 
 class Database {
 
-    constructor(){
-        this.NOME_ARQUIVO = 'herois.json'
-    }
+	constructor(){
+		this.NOME_ARQUIVO = "herois.json"
+	}
 
-    async obterDadosArquivo(){
+	async obterDadosArquivo(){
 
-        const arquivo = await readFileAsync(this.NOME_ARQUIVO, 'utf8')
+		const arquivo = await readFileAsync(this.NOME_ARQUIVO, "utf8")
+ 
+		return JSON.parse(arquivo.toString())
 
-        return JSON.parse(arquivo.toString());
+	}
 
-    }
+	async escreverArquivo(dados){
 
-    async escreverArquivo(dados){
+		await writeFileAsync(this.NOME_ARQUIVO, JSON.stringify(dados))
 
-        await writeFileAsync(this.NOME_ARQUIVO, JSON.stringify(dados))
+		return true        
 
-        return true;        
+	}
 
-    }
+	async cadastrar(heroi){
 
-    async cadastrar(heroi){
+		const dados = await this.obterDadosArquivo()
 
-        const dados = await this.obterDadosArquivo()
+		const id = heroi.id <= 2 ? heroi.id : Date.now()
 
-        const id = heroi.id <= 2 ? heroi.id : Date.now()
+		const heroiComId = {
+			id,
+			...heroi
+		}
 
-        const heroiComId = {
-            id,
-            ...heroi
-        }
+		const dadosFinal = [
+			...dados,
+			heroiComId,
+		]
 
-        const dadosFinal = [
-            ...dados,
-            heroiComId,
-        ]
+		const resultado = await this.escreverArquivo(dadosFinal)
 
-        const resultado = await this.escreverArquivo(dadosFinal)
+		return resultado
 
-        return resultado;
+	}
 
-    }
+	async listar(id){
 
-    async listar(id){
+		const dados = await this.obterDadosArquivo()
 
-        const dados = await this.obterDadosArquivo()
+		const dadosFiltrados = dados.filter((item) => id ? (item.id === id) : true)
 
-        const dadosFiltrados = dados.filter((item) => id ? (item.id === id) : true)
+		return dadosFiltrados
 
-        return dadosFiltrados;
+	}
 
-    }
-
-    async remover(id){
+	async remover(id){
         
-        if (!id){
+		if (!id){
 
-            return await this.escreverArquivo([])
+			return await this.escreverArquivo([])
 
-        }
+		}
 
-        const dados = await this.obterDadosArquivo()
+		const dados = await this.obterDadosArquivo()
 
-        const indice = dados.findIndex(item => item.id === parseInt(id))
+		const indice = dados.findIndex(item => item.id === parseInt(id))
 
-        if (indice === -1){
+		if (indice === -1){
 
-            throw Error('o usuario informado nao existe')
+			throw Error("o usuario informado nao existe")
 
-        }
+		}
 
-        dados.splice(indice, 1)
+		dados.splice(indice, 1)
 
-        return await this.escreverArquivo(dados);
+		return await this.escreverArquivo(dados)
 
-    }
+	}
 
-    async atualizar(id, modificacoes){
+	async atualizar(id, modificacoes){
 
-        const dados = await this.obterDadosArquivo()
+		const dados = await this.obterDadosArquivo()
 
-        const indice = dados.findIndex(item => item.id === parseInt(id))
+		const indice = dados.findIndex(item => item.id === parseInt(id))
 
-        if (indice === -1){
+		if (indice === -1){
 
-            throw Error('O heroi informado nao existe')
+			throw Error("O heroi informado nao existe")
 
-        }
+		}
 
-        const atual = dados[indice]
+		const atual = dados[indice]
 
-        const objetoAtualizar = {
-            ...atual,
-            ...modificacoes
-        }
+		const objetoAtualizar = {
+			...atual,
+			...modificacoes
+		}
 
-        dados.splice(indice,1)
+		dados.splice(indice,1)
 
-        return await this.escreverArquivo([
-            ...dados,
-            objetoAtualizar
-        ])
+		return await this.escreverArquivo([
+			...dados,
+			objetoAtualizar
+		])
 
-    }
+	}
 
 }
 
