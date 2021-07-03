@@ -10,99 +10,99 @@ const Heroi = require("./heroi")
 
 async function main(){
 
-	Commander
-		.version("v1")
-		.option("-n, --nome [value]", "Nome do heroi")
-		.option("-p, --poder [value]", "Poder do heroi")
-		.option("-i, --id [value]", "Id do heroi")
+    Commander
+        .version("v1")
+        .option("-n, --nome [value]", "Nome do heroi")
+        .option("-p, --poder [value]", "Poder do heroi")
+        .option("-i, --id [value]", "Id do heroi")
 
-		.option("-c, --cadastrar", "Cadastrar um heroi")
-		.option("-l, --listar", "Listar um heroi")
-		.option("-r, --remover", "Remover um heroi pelo id")
-		.option("-a, --atualizar [value]", "Atualizar um heroi pelo id")
+        .option("-c, --cadastrar", "Cadastrar um heroi")
+        .option("-l, --listar", "Listar um heroi")
+        .option("-r, --remover", "Remover um heroi pelo id")
+        .option("-a, --atualizar [value]", "Atualizar um heroi pelo id")
 
-		.parse(process.argv)
+        .parse(process.argv)
     
-	const heroi = new Heroi(Commander)
+    const heroi = new Heroi(Commander)
 
-	try {
+    try {
         
-		if (Commander.cadastrar){
+        if (Commander.cadastrar){
 
-			// node index.js --cadastrar --nome Aquaman --poder Marinho
+            // node index.js --cadastrar --nome Aquaman --poder Marinho
             
-			const resultado = await Database.cadastrar(heroi)
+            const resultado = await Database.cadastrar(heroi)
 
-			if (!resultado){
-				console.error("Heroi nao cadastrado!")
-				return
-			}
+            if (!resultado){
+                console.error("Heroi nao cadastrado!")
+                return
+            }
 
-			console.log("Heroi cadastrado com sucesso!")
+            console.log("Heroi cadastrado com sucesso!")
 
-		}
+        }
 
-		if (Commander.listar){
+        if (Commander.listar){
 
-			// node index.js --listar
+            // node index.js --listar
 
-			const resultado = await Database.listar()
-			console.log(resultado)
-			return
+            const resultado = await Database.listar()
+            console.log(resultado)
+            return
 
-		}
+        }
 
-		if (Commander.remover){
+        if (Commander.remover){
 
-			// limpar a base herois.json
-			// node index.js --cadastrar --nome Aquaman --poder Marinho
-			// node index.js --listar
-			// node index.js --remover --id 1625185282065
-			// node index.js --listar
+            // limpar a base herois.json
+            // node index.js --cadastrar --nome Aquaman --poder Marinho
+            // node index.js --listar
+            // node index.js --remover --id 1625185282065
+            // node index.js --listar
 
-			const resultado = await Database.remover(heroi.id)
+            const resultado = await Database.remover(heroi.id)
 
-			if (!resultado){
-				console.error("Nao foi possivel remover o heroi!")
-				return
-			}
+            if (!resultado){
+                console.error("Nao foi possivel remover o heroi!")
+                return
+            }
 
-			console.log("Heroi removido com sucesso!")
+            console.log("Heroi removido com sucesso!")
 
-		}
+        }
 
-		if (Commander.atualizar){
+        if (Commander.atualizar){
 
-			// node index.js --listar
-			// node index.js --cadastrar --nome Aquaman --poder Marinho
-			// node index.js --listar
-			// node index.js --atualizar 1625186319985 --nome Chapolin
-			// node index.js --atualizar 1625186319985 --poder "Marreta Bionica"
+            // node index.js --listar
+            // node index.js --cadastrar --nome Aquaman --poder Marinho
+            // node index.js --listar
+            // node index.js --atualizar 1625186319985 --nome Chapolin
+            // node index.js --atualizar 1625186319985 --poder "Marreta Bionica"
 
-			const idParaAtualizar = parseInt(Commander.atualizar)
+            const idParaAtualizar = parseInt(Commander.atualizar)
 
-			// remover todas as chaves que estiverem com undefined | null...
-			const dado = JSON.stringify(heroi)
+            // remover todas as chaves que estiverem com undefined | null...
+            const dado = JSON.stringify(heroi)
 
-			const heroiAtualizar = JSON.parse(dado)
+            const heroiAtualizar = JSON.parse(dado)
 
-			const resultado = await Database.atualizar(idParaAtualizar, heroiAtualizar)
+            const resultado = await Database.atualizar(idParaAtualizar, heroiAtualizar)
 
-			if (!resultado){
-				console.error("Nao foi possivel atualizar o heroi!")
-				return
-			}
+            if (!resultado){
+                console.error("Nao foi possivel atualizar o heroi!")
+                return
+            }
 
-			console.log("Heroi atualizado com sucesso!")
+            console.log("Heroi atualizado com sucesso!")
 
-		}
+        }
 
         
-	} catch (error) {
+    } catch (error) {
         
-		console.log("deu ruim", error)
+        console.log("deu ruim", error)
 
-	}
+    }
 
 }    
 

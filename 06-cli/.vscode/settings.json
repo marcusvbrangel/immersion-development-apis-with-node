@@ -11,8 +11,8 @@
     "editor.padding.bottom": 20,
     "editor.cursorSurroundingLines": 1,
     "editor.columnSelection": false,
-    "editor.renderWhitespace": "none",
-    "workbench.colorCustomizations": {    
-        "editorWhitespace.foreground": "#fbff00"
-    }
+    "editor.renderWhitespace": "boundary"
+    // "workbench.colorCustomizations": {    
+    //     "editorWhitespace.foreground": "#fbff00"
+    // }
 }

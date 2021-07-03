@@ -1,9 +1,9 @@
 class Heroi {
 
-	constructor({nome, poder}) {
-		this.nome = nome,
-		this.poder = poder
-	}
+    constructor({nome, poder}) {
+        this.nome = nome,
+        this.poder = poder
+    }
 
 }
 
